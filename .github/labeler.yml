@@ -1,19 +1,19 @@
 core:
   - all:
       - changed-files:
-          - any-glob-to-any-file: "lua/lazyvim/**"
-          - all-globs-to-all-files: "!lua/lazyvim/plugins/**"
+          - any-glob-to-any-file: "lua/lazylite/**"
+          - all-globs-to-all-files: "!lua/lazylite/plugins/**"
 
 core-plugins:
   - all:
       - changed-files:
-          - any-glob-to-any-file: "lua/lazyvim/plugins/**"
-          - all-globs-to-all-files: "!lua/lazyvim/plugins/extras/**"
+          - any-glob-to-any-file: "lua/lazylite/plugins/**"
+          - all-globs-to-all-files: "!lua/lazylite/plugins/extras/**"
 
 extras:
   - changed-files:
-      - any-glob-to-any-file: "lua/lazyvim/plugins/extras/**"
+      - any-glob-to-any-file: "lua/lazylite/plugins/extras/**"
 
 extras-lang:
   - changed-files:
-      - any-glob-to-any-file: "lua/lazyvim/plugins/extras/lang/**"
+      - any-glob-to-any-file: "lua/lazylite/plugins/extras/lang/**"

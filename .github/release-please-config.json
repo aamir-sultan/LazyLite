@@ -3,7 +3,7 @@
   "packages": {
     ".": {
       "release-type": "simple",
-      "extra-files": ["lua/lazyvim/config/init.lua"]
+      "extra-files": ["lua/lazylite/config/init.lua"]
     }
   }
 }

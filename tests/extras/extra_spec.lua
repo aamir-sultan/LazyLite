@@ -3,7 +3,7 @@
 local Icons = require("mini.icons")
 
 local Plugin = require("lazy.core.plugin")
-_G.LazyVim = require("lazyvim.util")
+_G.LazyLite = require("lazylite.util")
 
 describe("Extra", function()
   local Config = require("lazy.core.config")
@@ -18,10 +18,10 @@ describe("Extra", function()
     end,
     vim.fs.find(function(name)
       return name:match("%.lua$")
-    end, { limit = math.huge, type = "file", path = "lua/lazyvim/plugins/extras" })
+    end, { limit = math.huge, type = "file", path = "lua/lazylite/plugins/extras" })
   )
 
-  local ignore = { "lazyvim.plugins.extras.ui.treesitter-rewrite" }
+  local ignore = { "lazylite.plugins.extras.ui.treesitter-rewrite" }
   extras = vim.tbl_filter(function(extra)
     return not vim.tbl_contains(ignore, extra.modname)
   end, extras)
@@ -29,7 +29,7 @@ describe("Extra", function()
   local lsp_to_pkg = require("mason-lspconfig.mappings.server").lspconfig_to_package
 
   local tsspec = Plugin.Spec.new({
-    import = "lazyvim.plugins.treesitter",
+    import = "lazylite.plugins.treesitter",
   }, { optional = true })
 
   local tsopts = Plugin.values(tsspec.plugins["nvim-treesitter"], "opts", false)
@@ -38,7 +38,7 @@ describe("Extra", function()
   assert(type(tsensure) == "table", "No ensure_installed in nvim-treesitter spec")
 
   for _, extra in ipairs(extras) do
-    local name = extra.modname:sub(#"lazyvim.plugins.extras" + 2)
+    local name = extra.modname:sub(#"lazylite.plugins.extras" + 2)
     describe(name, function()
       it("spec is valid", function()
         local mod = require(extra.modname)

@@ -6,14 +6,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        **IMPORTANT:** ideas or requests related to extras, should go in the [Extra Requests](https://github.com/LazyVim/LazyVim/discussions/categories/extra-requests)
+        **IMPORTANT:** ideas or requests related to extras, should go in the [Extra Requests](https://github.com/LazyLite/LazyLite/discussions/categories/extra-requests)
         discussion forum.
   - type: checkboxes
     attributes:
       label: Did you check the docs?
       description: Make sure you read all the docs before submitting a feature request
       options:
-        - label: I have read all the LazyVim docs
+        - label: I have read all the LazyLite docs
           required: true
         - label: This is not a request for a new or existing extra (see above)
           required: true

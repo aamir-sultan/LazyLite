@@ -1,6 +1,6 @@
 ---@module "luassert"
 
-local LazyVim = require("lazyvim.util")
+local LazyLite = require("lazylite.util")
 
 describe("util", function()
   local t = 0
@@ -9,7 +9,7 @@ describe("util", function()
     return a
   end
 
-  local m = LazyVim.memoize(fn)
+  local m = LazyLite.memoize(fn)
 
   it("should memoize a function", function()
     local a = m(1)
@@ -22,10 +22,10 @@ describe("util", function()
     assert.are_not.equal(a, c)
   end)
 
-  local f1 = LazyVim.memoize(function()
+  local f1 = LazyLite.memoize(function()
     return 1
   end)
-  local f2 = LazyVim.memoize(function()
+  local f2 = LazyLite.memoize(function()
     return 2
   end)
 

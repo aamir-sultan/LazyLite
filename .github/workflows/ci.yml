@@ -10,5 +10,5 @@ jobs:
     uses: folke/github/.github/workflows/ci.yml@main
     secrets: inherit
     with:
-      plugin: LazyVim
-      repo: LazyVim/LazyVim
+      plugin: LazyLite
+      repo: LazyLite/LazyLite

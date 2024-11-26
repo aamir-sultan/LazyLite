@@ -5,41 +5,41 @@
 <hr>
 
 <h4 align="center">
-  <a href="https://lazyvim.github.io/installation">Instalar</a>
+  <a href="https://lazylite.github.io/installation">Instalar</a>
   ·
-  <a href="https://lazyvim.github.io/configuration">Configurar</a>
+  <a href="https://lazylite.github.io/configuration">Configurar</a>
   ·
-  <a href="https://lazyvim.github.io">Documentação</a>
+  <a href="https://lazylite.github.io">Documentação</a>
 </h4>
 
 <div align="center"><p>
-    <a href="https://github.com/LazyVim/LazyVim/releases/latest">
-      <img alt="Latest release" src="https://img.shields.io/github/v/release/LazyVim/LazyVim?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41&include_prerelease&sort=semver" />
+    <a href="https://github.com/LazyLite/LazyLite/releases/latest">
+      <img alt="Latest release" src="https://img.shields.io/github/v/release/LazyLite/LazyLite?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41&include_prerelease&sort=semver" />
     </a>
-    <a href="https://github.com/LazyVim/LazyVim/pulse">
-      <img alt="Last commit" src="https://img.shields.io/github/last-commit/LazyVim/LazyVim?style=for-the-badge&logo=starship&color=8bd5ca&logoColor=D9E0EE&labelColor=302D41"/>
+    <a href="https://github.com/LazyLite/LazyLite/pulse">
+      <img alt="Last commit" src="https://img.shields.io/github/last-commit/LazyLite/LazyLite?style=for-the-badge&logo=starship&color=8bd5ca&logoColor=D9E0EE&labelColor=302D41"/>
     </a>
-    <a href="https://github.com/LazyVim/LazyVim/blob/main/LICENSE">
-      <img alt="License" src="https://img.shields.io/github/license/LazyVim/LazyVim?style=for-the-badge&logo=starship&color=ee999f&logoColor=D9E0EE&labelColor=302D41" />
+    <a href="https://github.com/LazyLite/LazyLite/blob/main/LICENSE">
+      <img alt="License" src="https://img.shields.io/github/license/LazyLite/LazyLite?style=for-the-badge&logo=starship&color=ee999f&logoColor=D9E0EE&labelColor=302D41" />
     </a>
-    <a href="https://github.com/LazyVim/LazyVim/stargazers">
-      <img alt="Stars" src="https://img.shields.io/github/stars/LazyVim/LazyVim?style=for-the-badge&logo=starship&color=c69ff5&logoColor=D9E0EE&labelColor=302D41" />
+    <a href="https://github.com/LazyLite/LazyLite/stargazers">
+      <img alt="Stars" src="https://img.shields.io/github/stars/LazyLite/LazyLite?style=for-the-badge&logo=starship&color=c69ff5&logoColor=D9E0EE&labelColor=302D41" />
     </a>
-    <a href="https://github.com/LazyVim/LazyVim/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/LazyVim/LazyVim?style=for-the-badge&logo=bilibili&color=F5E0DC&logoColor=D9E0EE&labelColor=302D41" />
+    <a href="https://github.com/LazyLite/LazyLite/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/LazyLite/LazyLite?style=for-the-badge&logo=bilibili&color=F5E0DC&logoColor=D9E0EE&labelColor=302D41" />
     </a>
-    <a href="https://github.com/LazyVim/LazyVim">
-      <img alt="Repo Size" src="https://img.shields.io/github/repo-size/LazyVim/LazyVim?color=%23DDB6F2&label=SIZE&logo=codesandbox&style=for-the-badge&logoColor=D9E0EE&labelColor=302D41" />
+    <a href="https://github.com/LazyLite/LazyLite">
+      <img alt="Repo Size" src="https://img.shields.io/github/repo-size/LazyLite/LazyLite?color=%23DDB6F2&label=SIZE&logo=codesandbox&style=for-the-badge&logoColor=D9E0EE&labelColor=302D41" />
     </a>
     <a href="https://twitter.com/intent/follow?screen_name=folke">
       <img alt="follow on Twitter" src="https://img.shields.io/twitter/follow/folke?style=for-the-badge&logo=twitter&color=8aadf3&logoColor=D9E0EE&labelColor=302D41" />
     </a>
 </div>
 
-LazyVim é uma configuração de Neovim potenciada por [💤 lazy.nvim](https://github.com/folke/lazy.nvim)
+LazyLite é uma configuração de Neovim potenciada por [💤 lazy.nvim](https://github.com/folke/lazy.nvim)
 para tornar fácil customizar e extender a tua configuração.
 Em vez de ter de escolher entre começar de raiz ou usar
-uma distribuição pré-feita, LazyVim oferece o melhor
+uma distribuição pré-feita, LazyLite oferece o melhor
 dos dois mundos - a flexibilidade de alterar a tua configuração
 como necessário, junto com a conveniência de um setup pré-configurado.
 
@@ -64,14 +64,14 @@ como necessário, junto com a conveniência de um setup pré-configurado.
 
 ## 🚀 Como Começar
 
-Podes encontrar uma template **LazyVim** starter para começar, [aqui](https://github.com/LazyVim/starter)
+Podes encontrar uma template **LazyLite** starter para começar, [aqui](https://github.com/LazyLite/starter)
 
 <details><summary>Experimenta com docker</summary>
 
 ```sh
 docker run -w /root -it --rm alpine:edge sh -uelic '
   apk add git lazygit neovim ripgrep alpine-sdk --update
-  git clone https://github.com/LazyVim/starter ~/.config/nvim
+  git clone https://github.com/LazyLite/starter ~/.config/nvim
   cd ~/.config/nvim
   nvim
 '
@@ -79,7 +79,7 @@ docker run -w /root -it --rm alpine:edge sh -uelic '
 
 </details>
 
-<details><summary>Instala a template <a href="https://github.com/LazyVim/starter">LazyVim Starter</a></summary>
+<details><summary>Instala a template <a href="https://github.com/LazyLite/starter">LazyLite Starter</a></summary>
 
 - Faz um backup da tua configuração atual de Neovim:
 
@@ -91,7 +91,7 @@ docker run -w /root -it --rm alpine:edge sh -uelic '
 - Clona a template
 
   ```sh
-  git clone https://github.com/LazyVim/starter ~/.config/nvim
+  git clone https://github.com/LazyLite/starter ~/.config/nvim
   ```
 
 - Remove o diretório `.git`, para poderes adicionar ao teu próprio repositório mais tarde
@@ -106,7 +106,7 @@ docker run -w /root -it --rm alpine:edge sh -uelic '
   nvim
   ```
 
-  Consulta os comentários nos ficheiros sobre como customizar **LazyVim**.
+  Consulta os comentários nos ficheiros sobre como customizar **LazyLite**.
 
 </details>
 
@@ -120,8 +120,8 @@ Existe um excelente video criado por [@elijahmanor](https://github.com/elijahman
 
 Os ficheiros no diretório **config** serão carregados automaticamente
 no momento apropriado, por isso não é necessário carregar os plugins manualmente.
-**LazyVim** vem com um conjunto de ficheiros
-que serão carregados **_antes_** dos teus. Lẽ mais [aqui](https://github.com/LazyVim/LazyVim/tree/main/lua/lazyvim/config)
+**LazyLite** vem com um conjunto de ficheiros
+que serão carregados **_antes_** dos teus. Lẽ mais [aqui](https://github.com/LazyLite/LazyLite/tree/main/lua/lazylite/config)
 
 Tu podes acrescentar a tua configuração em `lua/plugins`. Todos os ficheiros
 neste diretório serão carregados automaticamente por [lazy.nvim](https://github.com/folke/lazy.nvim)
@@ -143,4 +143,4 @@ neste diretório serão carregados automaticamente por [lazy.nvim](https://githu
 
 ## ⚙️ Configuração
 
-Consulta a [documentação](https://lazyvim.github.io)
+Consulta a [documentação](https://lazylite.github.io)

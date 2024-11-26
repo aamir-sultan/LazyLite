@@ -2,7 +2,7 @@
 
 ## 13.x
 
-- **LazyVim** now uses `Snacks.dashboard` as the default dashboard.
+- **LazyLite** now uses `Snacks.dashboard` as the default dashboard.
   Check the [docs](https://github.com/folke/snacks.nvim/blob/main/docs/dashboard.md),
   for more information and examples.
 
@@ -13,7 +13,7 @@
 
 - The biggest change is the move of a bunch of core features to
   [snacks.nvim](https://github.com/folke/snacks.nvim) and fully
-  integrating it into **LazyVim**.
+  integrating it into **LazyLite**.
 
 - I highly suggest having a look at the **snacks.nvim** documentation
   to see all the new features and improvements. Most important changes:
@@ -29,7 +29,7 @@
 - [nvim-spectre](https://github.com/nvim-pack/nvim-spectre) has been removed in favor of [grug-far.nvim](https://github.com/MagicDuck/grug-far.nvim).
   **grug-far.nvim** has a great UI and feels more intuitive to use.
 
-- This **news** is now also available on the website at [https://www.lazyvim.org/news](https://www.lazyvim.org/news)
+- This **news** is now also available on the website at [https://www.lazylite.org/news](https://www.lazylite.org/news)
 
 - **prettier** extra now works for all prettier supported filetypes
   and will be enabled for astro/svelte extra if you have a proper
@@ -77,7 +77,7 @@
 - `vim-illuminate` move to extras
   Document highlights now use native lsp functionality by default
 
-Since Neovim 0.10 has been released, I've been working on a new version of **LazyVim**
+Since Neovim 0.10 has been released, I've been working on a new version of **LazyLite**
 that is fully compatible with all the latest Neovim features.
 
 Additionally, some core plugins have been moved to extras.
@@ -89,7 +89,7 @@ Additionally, some core plugins have been moved to extras.
   Older versions of Neovim will use the new `mini-comment` extra.
   `nvim-ts-context-commentstring` has been integrated in the native comments.
 
-- `inlay hints` have been in **LazyVim** for a while, but are now
+- `inlay hints` have been in **LazyLite** for a while, but are now
   enabled by default. To disable them:
 
   ```lua
@@ -136,7 +136,7 @@ Additionally, some core plugins have been moved to extras.
   Enable in your `options.lua` with:
 
   ```lua
-  vim.g.lazyvim_python_lsp = "basedpyright"
+  vim.g.lazylite_python_lsp = "basedpyright"
   ```
 
   Be aware that `basedpyright` is still in development and
@@ -156,17 +156,17 @@ Additionally, some core plugins have been moved to extras.
 - `nvim-navic` has been removed. If you want to keep using `nvim-navic`,
   you can enable the **editor.navic** extra
 
-- New `:LazyExtras` command for managing **LazyVim** extras
+- New `:LazyExtras` command for managing **LazyLite** extras
 
 - Improved **formatting**:
 
-  - **LazyVim** can now work with multiple formatters. Types:
+  - **LazyLite** can now work with multiple formatters. Types:
 
     - **primary**: only one primary formatter can be active at a time.
       _(conform, none-ls, LSP)_
     - **secondary**: multiple secondary formatters can be active _(eslint, ...)_
 
-  - **LazyVim** automatically selects the primary formatter based on the
+  - **LazyLite** automatically selects the primary formatter based on the
     current available sources and priorities.
 
   - New `:LazyFormat` command for formatting the current selection or buffer
@@ -196,7 +196,7 @@ Additionally, some core plugins have been moved to extras.
   - Configurable with `vim.g.root_spec`
 
     ```lua
-    -- LazyVim root dir detection
+    -- LazyLite root dir detection
     -- Each entry can be:
     -- * the name of a detector function like `lsp` or `cwd`
     -- * a pattern or array of patterns like `.git` or `lua`.
