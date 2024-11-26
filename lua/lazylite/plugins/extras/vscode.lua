@@ -45,7 +45,7 @@ end
 
 return {
   {
-    "LazyLite/LazyLite",
+    "aamir-sultan/LazyLite",
     config = function(_, opts)
       opts = opts or {}
       -- disable the colorscheme

@@ -11,4 +11,4 @@ jobs:
     secrets: inherit
     with:
       plugin: LazyLite
-      repo: LazyLite/LazyLite
+      repo: aamir-sultan/LazyLite

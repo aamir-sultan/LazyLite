@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **IMPORTANT:** ideas or requests related to extras, should go in the [Extra Requests](https://github.com/LazyLite/LazyLite/discussions/categories/extra-requests)
+        **IMPORTANT:** ideas or requests related to extras, should go in the [Extra Requests](https://github.com/aamir-sultan/LazyLite/discussions/categories/extra-requests)
         discussion forum.
   - type: checkboxes
     attributes:

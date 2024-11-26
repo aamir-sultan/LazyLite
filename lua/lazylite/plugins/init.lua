@@ -22,7 +22,7 @@ end
 
 return {
   { "folke/lazy.nvim", version = "*" },
-  { "LazyLite/LazyLite", priority = 10000, lazy = false, opts = {}, cond = true, version = "*" },
+  { "aamir-sultan/LazyLite", priority = 10000, lazy = false, opts = {}, cond = true, version = "*" },
   {
     "folke/snacks.nvim",
     priority = 1000,
