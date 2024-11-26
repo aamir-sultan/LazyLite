@@ -1,6 +1,6 @@
 ---@meta
 
----@class LazyVimGlobals
+---@class LazyLiteGlobals
 vim.g = {}
 
 _G.lazylite_docs = true

@@ -23,7 +23,7 @@ return {
     init = function()
       -- delete lazygit keymap for file history
       vim.api.nvim_create_autocmd("User", {
-        pattern = "LazyVimKeymaps",
+        pattern = "LazyLiteKeymaps",
         once = true,
         callback = function()
           pcall(vim.keymap.del, "n", "<leader>gf")

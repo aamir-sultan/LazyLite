@@ -36,7 +36,7 @@
     </a>
 </div>
 
-LazyVim은 [💤 lazy.nvim](https://github.com/folke/lazy.nvim)를 기반으로 작동하는 Neovim 셋업입니다. 더 커스터마이징 가능하고, 설정들을 바꾸는 것을 쉽게 만들기위해 시작되었죠. 그저 처음부터 모든 설정들을 만지고 시작하는 방법, 또는 이미 만들어진 배포용 설정을 사용하는 방법이 있지만, LazyVIM은 이미 잘 설정된 환경과, 필요에 따라 쉽게 바꿀 수 있는 유연성을 모두 포괄합니다. 이를 통해 훨신 쉽고 편리한, 전에는 만나보실 수 없었던 새로운 Nvim의 세계를 경험하실 수 있으실 겁니다.
+LazyLite은 [💤 lazy.nvim](https://github.com/folke/lazy.nvim)를 기반으로 작동하는 Neovim 셋업입니다. 더 커스터마이징 가능하고, 설정들을 바꾸는 것을 쉽게 만들기위해 시작되었죠. 그저 처음부터 모든 설정들을 만지고 시작하는 방법, 또는 이미 만들어진 배포용 설정을 사용하는 방법이 있지만, LazyVIM은 이미 잘 설정된 환경과, 필요에 따라 쉽게 바꿀 수 있는 유연성을 모두 포괄합니다. 이를 통해 훨신 쉽고 편리한, 전에는 만나보실 수 없었던 새로운 Nvim의 세계를 경험하실 수 있으실 겁니다.
 
 ![image](https://user-images.githubusercontent.com/292349/211285846-0b7bb3bf-0462-4029-b64c-4ee1d037fc1c.png)
 
@@ -101,13 +101,13 @@ docker run -w /root -it --rm alpine:edge sh -uelic '
   nvim
   ```
 
-  LazyVim를 커스터마이징 하는 법에 대해 다룬 설명을 참조해주시기 바랍니다.
+  LazyLite를 커스터마이징 하는 법에 대해 다룬 설명을 참조해주시기 바랍니다.
 
 </details>
 
 ---
 
-유튜브에 LazyVim시작하기에 대해 [@elijahmanor](https://github.com/elijahmanor)에 의해 만들어진 영상이 있으니, 시청해 보시는 것을 추천드립니다.
+유튜브에 LazyLite시작하기에 대해 [@elijahmanor](https://github.com/elijahmanor)에 의해 만들어진 영상이 있으니, 시청해 보시는 것을 추천드립니다.
 
 [![Watch the video](https://img.youtube.com/vi/N93cTbtLCIM/hqdefault.jpg)](https://www.youtube.com/watch?v=N93cTbtLCIM)
 

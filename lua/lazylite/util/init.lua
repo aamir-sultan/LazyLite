@@ -1,7 +1,7 @@
 local LazyUtil = require("lazy.core.util")
 
 ---@class lazylite.util: LazyUtilCore
----@field config LazyVimConfig
+---@field config LazyLiteConfig
 ---@field ui lazylite.util.ui
 ---@field lsp lazylite.util.lsp
 ---@field root lazylite.util.root

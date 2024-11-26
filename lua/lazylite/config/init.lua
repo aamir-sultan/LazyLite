@@ -1,12 +1,12 @@
 _G.LazyLite = require("lazylite.util")
 
----@class LazyVimConfig: LazyVimOptions
+---@class LazyLiteConfig: LazyLiteOptions
 local M = {}
 
 M.version = "13.5.3" -- x-release-please-version
 LazyLite.config = M
 
----@class LazyVimOptions
+---@class LazyLiteOptions
 local defaults = {
   -- colorscheme can be a string like `catppuccin` or a function that will load the colorscheme
   ---@type string|fun()
@@ -160,11 +160,11 @@ function M.json.load()
   end
 end
 
----@type LazyVimOptions
+---@type LazyLiteOptions
 local options
 local lazy_clipboard
 
----@param opts? LazyVimOptions
+---@param opts? LazyLiteOptions
 function M.setup(opts)
   options = vim.tbl_deep_extend("force", defaults, opts or {}) or {}
 
@@ -307,7 +307,7 @@ setmetatable(M, {
     if options == nil then
       return vim.deepcopy(defaults)[key]
     end
-    ---@cast options LazyVimConfig
+    ---@cast options LazyLiteConfig
     return options[key]
   end,
 })

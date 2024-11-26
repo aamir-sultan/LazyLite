@@ -36,8 +36,8 @@
     </a>
 </div>
 
-LazyVimは、設定の拡張と変更を容易にするために[💤 lazy.nvim](https://github.com/folke/lazy.nvim)によって提供されるNeovimセットアップです。
-LazyVimは、ゼロから始めるか、あらかじめ作成されたディストリビューションを使用するかの選択を迫ることなく、
+LazyLiteは、設定の拡張と変更を容易にするために[💤 lazy.nvim](https://github.com/folke/lazy.nvim)によって提供されるNeovimセットアップです。
+LazyLiteは、ゼロから始めるか、あらかじめ作成されたディストリビューションを使用するかの選択を迫ることなく、
 必要に応じて設定を調整する柔軟性と、事前に設定されたセットアップの利便性を両方叶える最高の世界を提供します。
 
 ![image](https://user-images.githubusercontent.com/292349/211285846-0b7bb3bf-0462-4029-b64c-4ee1d037fc1c.png)
@@ -116,7 +116,7 @@ docker run -w /root -it --rm alpine:edge sh -uelic '
 
 config配下にあるファイルは適切なタイミングで自動的にロードされる為、
 手動でそれらのファイルをrequireする必要はありません。
-LazyVimには、自分で設定したものより先にロードされるデフォルトの設定ファイルが付属しています。詳しくは[こちら](https://github.com/aamir-sultan/LazyLite/tree/main/lua/lazylite/config)。
+LazyLiteには、自分で設定したものより先にロードされるデフォルトの設定ファイルが付属しています。詳しくは[こちら](https://github.com/aamir-sultan/LazyLite/tree/main/lua/lazylite/config)。
 カスタムプラグインをlua/plugins/の下に追加することができます。lua/plugins/配下の全てのファイルは[lazy.nvim](https://github.com/folke/lazy.nvim)によって自動的にロードされます。
 
 <pre>
