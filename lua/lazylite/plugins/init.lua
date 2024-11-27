@@ -1,7 +1,7 @@
 if vim.fn.has("nvim-0.9.0") == 0 then
   vim.api.nvim_echo({
     { "LazyLite requires Neovim >= 0.9.0\n", "ErrorMsg" },
-    { "Press any key to exit", "MoreMsg" },
+    { "Press any key to exit",               "MoreMsg" },
   }, true, {})
   vim.fn.getchar()
   vim.cmd([[quit]])
@@ -21,7 +21,7 @@ local function term_nav(dir)
 end
 
 return {
-  { "folke/lazy.nvim", version = "*" },
+  { "folke/lazy.nvim",       version = "*" },
   { "aamir-sultan/LazyLite", priority = 10000, lazy = false, opts = {}, cond = true, version = "*" },
   {
     "folke/snacks.nvim",
@@ -31,7 +31,7 @@ return {
       ---@type snacks.Config
       return {
         bigfile = { enabled = true },
-        notifier = { enabled = true },
+        --        notifier = { enabled = true },
         quickfile = { enabled = true },
         statuscolumn = { enabled = false }, -- we set this in options.lua
         terminal = {
