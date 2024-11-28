@@ -3,7 +3,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<BS>", desc = "Decrement Selection", mode = "x" },
+        { "<BS>",      desc = "Decrement Selection", mode = "x" },
         { "<c-space>", desc = "Increment Selection", mode = { "x", "n" } },
       },
     },
@@ -31,7 +31,7 @@ return {
     cmd = { "TSUpdateSync", "TSUpdate", "TSInstall" },
     keys = {
       { "<c-space>", desc = "Increment Selection" },
-      { "<bs>", desc = "Decrement Selection", mode = "x" },
+      { "<bs>",      desc = "Decrement Selection", mode = "x" },
     },
     opts_extend = { "ensure_installed" },
     ---@type TSConfig
@@ -43,9 +43,9 @@ return {
         "bash",
         "c",
         "diff",
-        "html",
-        "javascript",
-        "jsdoc",
+        -- "html",
+        -- "javascript",
+        -- "jsdoc",
         "json",
         "jsonc",
         "lua",
@@ -58,8 +58,9 @@ return {
         "query",
         "regex",
         "toml",
-        "tsx",
-        "typescript",
+        -- "tsx",
+        -- "typescript",
+        "verilog",
         "vim",
         "vimdoc",
         "xml",
@@ -128,9 +129,9 @@ return {
   },
 
   -- Automatically add closing tags for HTML and JSX
-  {
-    "windwp/nvim-ts-autotag",
-    event = "LazyFile",
-    opts = {},
-  },
+  -- {
+  --   "windwp/nvim-ts-autotag",
+  --   event = "LazyFile",
+  --   opts = {},
+  -- },
 }
