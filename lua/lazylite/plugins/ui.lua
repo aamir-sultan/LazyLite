@@ -306,25 +306,41 @@ return {
   -- ui components
   { "MunifTanjim/nui.nvim", lazy = true },
   -- Start screen for Vim and Neovim.
-  -- { "mhinz/vim-startify", lazy = true, enabled = false },
+  -- { "mhinz/vim-startify",   lazy = false, enabled = true },
+
+  -- {
+  --   "kungfusheep/randomquote.nvim",
+  --   -- lazy = false,
+  --   -- enabled = true,
+  --   event = "VimEnter",
+  --   opts = function()
+  --     require("randomquote").setup()
+  --   end
+  -- },
 
   {
     "nvimdev/dashboard-nvim",
     lazy = false, -- As https://github.com/nvimdev/dashboard-nvim/pull/450, dashboard-nvim shouldn't be lazy-loaded to properly handle stdin.
-    dependencies = { 'BlakeJC94/alpha-nvim-fortune' },
+    dependencies = {
+      'BlakeJC94/alpha-nvim-fortune',
+    },
+
     opts = function()
       local fortune = require("alpha.fortune")
       local qoute = fortune()
       -- local plug =  [[
       -- [  Github] [ aamir-sultan]
       -- ]]
+      --       local logo = [[
+      -- 110 118 105 109
+      -- ]]
       local logo = [[
-            .__
+      .__
   _______  _|__| _____
- /    \  \/ /  |/     \
-|   |  \   /|  |  Y Y  \
-|___|  /\_/ |__|__|_|  /
-     \/              \/
+   /    \  \/ /  |/     \
+  |   |  \   /|  |  Y Y  \
+  |___|  /\_/ |__|__|_|  /
+       \/              \/
   ]]
 
       local combined = logo .. qoute
@@ -333,6 +349,7 @@ return {
       local opts = {
         -- theme = "doom", -- doom can use the buttons style which LazyLite is following
         theme = "hyper",
+        max_width = 100,
         hide = {
           -- this is taken care of by lualine
           -- enabling this messes up the actual laststatus setting after loading a file
