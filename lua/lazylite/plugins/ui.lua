@@ -85,6 +85,9 @@ return {
           theme = "auto",
           globalstatus = vim.o.laststatus == 3,
           disabled_filetypes = { statusline = { "dashboard", "alpha", "ministarter", "snacks_dashboard" } },
+
+          component_separators = { left = '', right = '' },
+          section_separators = { left = '', right = '' },
         },
         sections = {
           lualine_a = { "mode" },
@@ -320,7 +323,8 @@ return {
 
   {
     "nvimdev/dashboard-nvim",
-    lazy = false, -- As https://github.com/nvimdev/dashboard-nvim/pull/450, dashboard-nvim shouldn't be lazy-loaded to properly handle stdin.
+    -- lazy = false, -- As https://github.com/nvimdev/dashboard-nvim/pull/450, dashboard-nvim shouldn't be lazy-loaded to properly handle stdin.
+    event = "VimEnter",
     dependencies = {
       'BlakeJC94/alpha-nvim-fortune',
     },
@@ -335,12 +339,12 @@ return {
       -- 110 118 105 109
       -- ]]
       local logo = [[
-      .__
+    .__
   _______  _|__| _____
-   /    \  \/ /  |/     \
+ /    \  \/ /  |/     \
   |   |  \   /|  |  Y Y  \
   |___|  /\_/ |__|__|_|  /
-       \/              \/
+     \/              \/
   ]]
 
       local combined = logo .. qoute
